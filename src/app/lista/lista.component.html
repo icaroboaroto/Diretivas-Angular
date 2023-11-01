@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let task of tasks" [ngStyle]="{'text-decoration': task.completed ? 'line-through' : 'none'}">
+    {{ task.description }}
+    <button (click)="toggleCompleted(task)">Concluir</button>
+  </li>
+</ul>
